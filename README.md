@@ -1,6 +1,8 @@
+
 # Computer Vision 👁 
 
-### What is vision?
+## 1.0 Human Vision 👶🏻
+#### What is vision?
  - Recognize objects
     - people we know
     - things we own
@@ -12,10 +14,10 @@
 - Recognize actions
     - walking, running, pushing
 
-### Vision is deceivingly easy 
+#### Vision is deceivingly easy 
 Although it does not require efforts or skills like for eaxample, thinking, we use nearly 70% of our brains for visual perception! Also not all creatures see alike.
 
-### Vision is deceptive  🕵🏻‍♂️
+#### Vision is deceptive  🕵🏻‍♂️
 Vision is **strong** and **immediate** sensation, but it is illusional
 - We perceive the visual world as external to ourselves, but it is a reconstruction within our brains
 - We regard how we see as reflecting the world “as it is;” but human vision is
@@ -37,4 +39,14 @@ Vision is **strong** and **immediate** sensation, but it is illusional
         - Vision systems can be “active” - carry their own energy sources
             - Radars
             - Bat acoustic imaging systems.
+
+___
+## 1.1 Computer Vision 🖥
+### Definition
+Computer Vision is developing computer programs to understand the content of images and videos.
+| Types of related fields |
+| ------ |
+| 2D --- Image Processing---> 2D |
+| 2D --- Computer Vision ---> 3D |
+| 3D ---Computer Graphics--> 2D |
 
