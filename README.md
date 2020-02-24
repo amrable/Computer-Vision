@@ -74,3 +74,46 @@ Computer Vision is developing computer programs to understand the content of ima
 
 ---
 
+
+## 1.2 Image Formation, Histograms, and Point Operations 📊
+
+### 1.2.1 Image Formation
+
+<img width="400" alt="Screen Shot 2020-02-24 at 21 00 07" src="https://user-images.githubusercontent.com/31357623/75182501-331d2a80-5749-11ea-8844-7037682c823d.png">  <img width="300" alt="Screen Shot 2020-02-24 at 21 00 33" src="https://user-images.githubusercontent.com/31357623/75182872-f3a30e00-5749-11ea-9afe-119fcb18c275.png">
+
+
+### Digital images
+- Sample the 2D space on a regular grid
+- Quantize each sample (round to nearest integer)
+- Image thus represented as a matrix of integer values.
+
+
+### Digital camera 📸
+- A digital camera replaces film with a sensor array
+- Each cell in the array is light-sensitive diode that converts photons to electrons
+
+![rgb](https://user-images.githubusercontent.com/31357623/75183219-bee38680-574a-11ea-8d59-7863e4745089.png)
+
+
+### What is a histogram?
+- A compact representation of statistical distribution of intensity values in the image,
+- No spatial information is encoded, different images could have exactly the same histogram
+
+### Why do we use histogram?
+- Determine quality of an image
+- Determine whether an image has been manipulated or not
+- Enhance image properties
+- Represent the pattern in an image
+
+### Interpreting Histograms
+| Property | Effect | Illustration| 
+|----------|-------------|------------|
+|Contrust| Difference between the maximum and minimum intensity values recorded| <img width="953" alt="Screen Shot 2020-02-24 at 21 34 26" src="https://user-images.githubusercontent.com/31357623/75184685-72e61100-574d-11ea-84fc-fb84664c40c6.png"> |
+|Dynamic Range| Number of distinct pixel values in the image|<img width="953" alt="Screen Shot 2020-02-24 at 21 36 57" src="https://user-images.githubusercontent.com/31357623/75184886-cce6d680-574d-11ea-8fe3-4c164cb25667.png">|
+|Exposure: the quantity of light reaching a photographic film| Poor image exposure appears as High density at one end of the histogram and low density at the other end | <img width="534" alt="Screen Shot 2020-02-24 at 21 44 07" src="https://user-images.githubusercontent.com/31357623/75185456-cc9b0b00-574e-11ea-892d-ac5b5bc9a66a.png"> |
+
+# TBD 
+- Detect image defects by histograms
+- Color Image Histograms
+- Binning
+- Point operations
