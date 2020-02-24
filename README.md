@@ -1,6 +1,8 @@
 
 # Computer Vision 👁 
 
+> **_NOTE:_**  Sections 1.0 and 1.1 are almost the same as the slide, it is boring and I could not make it more entertaining 😞
+
 ## 1.0 Human Vision 👶🏻
 #### What is vision?
  - Recognize objects
@@ -49,4 +51,26 @@ Computer Vision is developing computer programs to understand the content of ima
 | 2D --- Image Processing---> 2D |
 | 2D --- Computer Vision ---> 3D |
 | 3D ---Computer Graphics--> 2D |
+
+### Why study Computer Vision?
+- Images and movies are everywhere
+- Fast-growing collection of useful applications
+    - building representations of the 3D world from pictures
+    - automated surveillance (who’s doing what)
+    - movie post-processing
+    - face finding
+- Various deep and attractive scientific mysteries
+    - how does object recognition work?
+- Greater understanding of human vision
+
+### Computer vision contributes in many fields 
+- Critical to many applications in
+- Medicine
+- Transportation
+- Entertainment
+- Agriculture
+- Defense
+- Visual Surveillance
+
+---
 
