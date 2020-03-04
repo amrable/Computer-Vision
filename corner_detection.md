@@ -18,19 +18,9 @@ _Basic reading: Szeliski textbook, Sections 4.1._
    -  f(x,y) = x<sup>2</sup> + y<sup>2</sup>
    -  If you slice the bowl at you get a circle of radius = 1.
    -  It can be represented by matrix multiplication => [ x y ] * A * [ x y ]T
-$$
-\left(\begin{array}{cc} 
-x & y
-\end{array}\right)
-\left(\begin{array}{cc} 
-1 & 0\\ 
-0 & 1
-\end{array}\right)
-\left(\begin{array}{cc} 
-x\\ 
-y
-\end{array}\right)
-$$ 
+
+<img width="534" alt="Screen Shot 2020-03-04 at 22 13 59" src="https://user-images.githubusercontent.com/31357623/75919137-ac153400-5e65-11ea-8d75-e4f04276c8a0.png">
+
 
 - Singular Value Decomposition (SVD) for Matrix A
   - A = eig_vectors * eig_values * (eig_vectors)T
@@ -53,28 +43,9 @@ The surface E(u,v) is locally approximated by a quadratic form: [ u v ] * A * [ 
   - Iy - Gradient in y axis
   - M - covariance matrix
 
- $$
- E(u,v) = 
-\left(\begin{array}{cc} 
-u & v
-\end{array}\right)
-\left(\begin{array}{cc} 
-M
-\end{array}\right)
-\left(\begin{array}{cc} 
-u\\ 
-v
-\end{array}\right)
-$$ 
+<img width="534" alt="Screen Shot 2020-03-04 at 22 14 14" src="https://user-images.githubusercontent.com/31357623/75919200-c2bb8b00-5e65-11ea-9dc1-6faa025fe374.png">
 
-$$
-M = \Sigma
-\left(\begin{array}{cc} 
-Ix^{2} & IxIy\\ 
-IxIy & Iy^{2}
 
-\end{array}\right)
-$$ 
 ---
 ## Program to detect corners
 
@@ -101,20 +72,14 @@ $$
 
 
 
-$$ Me = \lambda e $$ 
+<img width="534" alt="Screen Shot 2020-03-04 at 22 14 25" src="https://user-images.githubusercontent.com/31357623/75919287-ef6fa280-5e65-11ea-8426-68174b958f81.png">
 
 Instead of computeing eigen vectors without actually needing them, we can make use of the symmetry of matrix M.
 
 Since M is symmetric, we have
-$$
-M =  R^{-1}
-\left(\begin{array}{cc} 
-\lambda 1 & 0\\ 
-0 & \lambda 2
 
-\end{array}\right)
-R
-$$ 
+<img width="534" alt="Screen Shot 2020-03-04 at 22 14 32" src="https://user-images.githubusercontent.com/31357623/75919317-fd252800-5e65-11ea-9370-a4e2bfda3687.png">
+
 We can visualize M as an ellipse with axis lengths determined by the
 eigenvalues and orientation determined by R
 
@@ -131,11 +96,12 @@ eigenvalues and orientation determined by R
 Many ways to apply threshold
 
 1. Use the smallest eigenvalue as the response function
-   $$ R = min( \lambda 1 , \lambda 2) $$
+ <img width="534" alt="Screen Shot 2020-03-04 at 22 14 54" src="https://user-images.githubusercontent.com/31357623/75919398-25ad2200-5e66-11ea-8805-e344b5a5b36b.png">
+
 2. Eigenvalues need to be bigger than one
-   $$ R =  \lambda 1 \lambda 2 - k (\lambda 1 + \lambda 2)^{2}  $$
+<img width="534" alt="Screen Shot 2020-03-04 at 22 14 47" src="https://user-images.githubusercontent.com/31357623/75919394-23e35e80-5e66-11ea-94f2-adfa046e5200.png">
 3. Use trace and det of matrix M ( trace = sum of diagonals )
-   $$ R =  det(M) - k trace^{2}(M)  $$
+ <img width="534" alt="Screen Shot 2020-03-04 at 22 14 43" src="https://user-images.githubusercontent.com/31357623/75919387-21810480-5e66-11ea-9b7a-5346194cd36f.png">
     
 If R value is positive => there is a corner,
 otherwise => egde or flate
