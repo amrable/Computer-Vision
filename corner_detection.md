@@ -105,3 +105,23 @@ Many ways to apply threshold
     
 If R value is positive => there is a corner,
 otherwise => egde or flate
+
+---
+
+## Harris corner response is invariant to rotation
+
+Ellipse rotates but its shape (eigenvalues) remains the same
+
+## Harris corner response is invariant to intensity changes
+
+Partial invariance to affine intensity change
+- Only derivatives are used => invariance to intensity
+shift I → I + b
+- Intensity scale: I → a I
+
+## The Harris corner detector is not invariant to scale
+
+
+
+
+TBD : Multi scale detector
